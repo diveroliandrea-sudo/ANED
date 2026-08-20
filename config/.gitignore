@@ -1,0 +1,7 @@
+# nella cartella ANED crea .gitignore con questo contenuto:
+/vendor/
+/uploads/
+config/database.php
+config/mail.php
+AMMINISTRAZIONE/DB/
+*.log

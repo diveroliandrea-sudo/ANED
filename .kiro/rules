@@ -1,0 +1,14 @@
+# Istruzioni Generali e Flusso di Lavoro Kiro
+
+## Regola d'Oro (Da eseguire SEMPRE prima di qualsiasi operazione)
+1. **Punto di Partenza Obbligatorio:** Prima di proporre codice, modificare file o rispondere a qualsiasi richiesta di sviluppo, LEGGI SEMPRE il file di specifica situato in:
+   `C:\xampp\htdocs\ANED\DocumentiSpecifiche\ANED-DOC-SPEC.md`
+2. **Coerenza Tecnologica:** Mantieni la struttura delle cartelle e lo stack tecnologico definiti nel documento di specifica (PHP 8.x, MySQL/PDO, Prepared Statements).
+3. **Aggiornamento Specifiche:** Se durante lo sviluppo vengono aggiunte nuove funzionalità o modificate le strutture del database, proponi sempre l'aggiornamento corrispondente all'interno di `ANED-DOC-SPEC.md`.
+
+4. **Creazione dei test** Crea i casi di test nella directory ./test ed eseguili
+
+## Standard di Codice e Sicurezza
+- Utilizzare sempre PDO con Prepared Statements per le query al DB.
+- Sanitizzare l'output HTML tramite `htmlspecialchars()`.
+- Mantenere la logica PHP separata dal markup HTML ove possibile.

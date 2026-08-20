@@ -1,0 +1,10 @@
+Options -Indexes
+ServerSignature Off
+
+# Blocca accesso diretto ai file di configurazione
+<FilesMatch "^(config|database|mail)\.php$">
+    Require all denied
+</FilesMatch>
+
+# Charset
+AddDefaultCharset UTF-8

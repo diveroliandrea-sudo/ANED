@@ -1,0 +1,19 @@
+# Dipendenze
+/vendor/
+
+# File di configurazione con credenziali
+/config/database.php
+/config/mail.php
+
+# Upload utenti
+/uploads/
+
+# Documenti amministrativi interni
+/AMMINISTRAZIONE/DB/
+
+# Log
+*.log
+
+# Cache Laravel (residui)
+/bootstrap/cache/*.php
+!/bootstrap/cache/.gitignore

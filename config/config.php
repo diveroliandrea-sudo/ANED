@@ -108,3 +108,9 @@ function formatDate($date) {
 function formatMoney($amount) {
     return '€ ' . number_format((float)$amount, 2, ',', '.');
 }
+
+function isPreviewableMediaFile($filename) {
+    if (!$filename) return false;
+    $ext = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
+    return in_array($ext, ['jpg','jpeg','png','gif','webp','pdf'], true);
+}
